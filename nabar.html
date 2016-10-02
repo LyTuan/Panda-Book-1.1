@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+      <!-- <div class="top-nabar"> -->
+      <!--   <div class="container">
+            <div class="row">
+                <div class="col-xs-2  hidden-xs  ">
+                    <img src="img/logo.jpg" alt="logo" class="img-responsive logo">
+                    
+                </div>
+                <div class="col-xs-5 search "> 
+                    <div class="input-group"><input type="text" class="form-control "  placeholder="Search for...">
+                         <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="col-xs-4 col-xs-offset-1 ">
+                  <img src="img/banner_02.jpg" alt="banner" class="img-responsive search">
+                </div>
+            </div>
+        </div>
+      </div> -->
+<!-- Bắt đầu nabar -->
+<br>
+<br>
+      <div class="header ">
+           <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Panda Book</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Trang chủ</a></li>
+            <li><a href="#about">Diễn đàn</a></li>
+            <!-- <li><a href="#contact"></a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sách UET <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">CNTT</a></li>
+                <li><a href="#">Điện tử viễn thông</a></li>
+                <li><a href="#">Cơ kỹ thuật</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Sách khác</li>
+                <li><a href="#">An toàn thông tin</a></li>
+                <li><a href="#">Phần cứng máy tính</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sách ngoài<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Sách thiếu nhi</a></li>
+                  <li><a href="#">Sách kỹ năng</a></li>
+                  <li><a href="#">Văn học</a></li>
+                  <li><a href="#">Tuổi teen</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Sách khác</li>
+                  <li><a href="#">Truyện tranh</a></li>
+                  <li><a href="#">Sách kinh tế </a></li>
+
+                </ul>
+              </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign in</a></li>
+            <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!--Kết thúc nabar-->
+
+<!-- Đây là phần trình diễn slide các banner  -->
+    <div class="container">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                          <img src="img/002.jpg" alt="002">
+                          
+                        </div>
+                        <div class="item">
+                          <img src="img/003.jpg" alt="003">
+                          
+                        </div>
+                        <div class="item">
+                            <img src="img/004.jpg" alt="004">
+                        </div>
+                        
+                      </div>
+
+                  <!-- Controls -->
+                  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+        </div>
+    </div>
+    
+<!-- Kết thúc phần slider -->
+
+     <div class="main-nabar"></div>
+     </div>
+
+<!-- Đây là phần nội dung chính  -->
+    <div class="content">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="50000" >
+    <h2>Sách được yêu thích</h2>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <div class = "space"></div>
+
+        <div class="img tooltip1" data-tooltip-content="#tooltip_content">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <div class="price">8000vnd</div>
+           <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img tooltip1" >
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">8000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <div class="price">8000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">8000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">8000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">8000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">8000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>       
+      </div>
+
+      <div class="item">
+        <div class = "space"></div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+           <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>
+
+        <div class="img">
+           <img src="book_PNG2116.png" alt="sach1" width="100" height="100"/>
+            <div class="price">7000vnd</div>
+            <button class="btn btn-primary">Buy</button>
+        </div>  
+      </div>
+
+   
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>   
+   </div>
+   </div>
+<!-- Đây là phần kết thúc nội dung chính -->
+
+<!-- Đây là phần foooter -->
+    <div class="footer">
+         <div class="well">
+             <div class="footer">
+             <div class="row">
+               <div class="col-xs-8 ">
+                    <a class="btn btn-social-icon btn-twitter">
+                      <span class="fa fa-twitter"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-facebook">
+                          <span class="fa fa-facebook"></span>
+                    </a>
+                    <a class="btn btn-social-icon btn-google">
+                          <span class="fa fa-google"></span>
+                    </a>
+               </div>
+               <div class="col-xs-4 ">
+                 <div class="row">
+                     <div class="col-xs-6">
+                        <strong>PandaBook</strong>
+                        <p>Liên hệ: 01689700133</p>        
+                     </div>
+                    
+                 </div>
+                 
+               </div>
+             </div>
+   </div><!--Footer-->
+   </div>
+    </div>
+<!-- Kết thúc phần footer -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
