@@ -42,7 +42,11 @@
 									<li><a href="#">My acount</a></li>
 									<li><a href="#">Wishlist</a></li>
 									<li><a href="#">Sign out</a></li>
-									<li><a href="#" onclick="document.getElementById('idmodal').style.display='block'">Sign in</a></li>
+									<li>
+										<a href="#" onclick="document.getElementById('idlogin').style.display='block';
+															document.getElementById('idmodal').style.display='block'">Sign in
+										</a>
+									</li>
 									<li><a href="#">Create new acount</a></li>
 									
 								</ul>
@@ -150,7 +154,7 @@
 
 	<!--Login, Register-->
 	<div id="idmodal" class="modal">
-		<form id="idlogin" class="modal-content animate">
+		<form id="idlogin" class="modal-content animate" style="display: none;">
 			<div class="title-login">Đăng Nhập</div>
 			<input class="input-login" type="text" name="uname" placeholder="Email" required>
 			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
@@ -183,6 +187,8 @@
 		window.onclick = function(event) {
 		    if (event.target == modal) {
 		        modal.style.display = "none";
+		        document.getElementById('idlogin').style.display='none';
+		        document.getElementById('idregister').style.display='none';
 		    }
 		}
 	</script>
