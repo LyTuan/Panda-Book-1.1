@@ -42,7 +42,7 @@
 									<li><a href="#">My acount</a></li>
 									<li><a href="#">Wishlist</a></li>
 									<li><a href="#">Sign out</a></li>
-									<li><a href="#" onclick="document.getElementById('idlogin').style.display='block'">Sign in</a></li>
+									<li><a href="#" onclick="document.getElementById('idmodal').style.display='block'">Sign in</a></li>
 									<li><a href="#">Create new acount</a></li>
 									
 								</ul>
@@ -149,8 +149,8 @@
 	</header><!-- /header-->
 
 	<!--Login, Register-->
-	<div id="idlogin" class="modal">
-		<form class="modal-content animate">
+	<div id="idmodal" class="modal">
+		<form id="idlogin" class="modal-content animate">
 			<div class="title-login">Đăng Nhập</div>
 			<input class="input-login" type="text" name="uname" placeholder="Email" required>
 			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
@@ -163,9 +163,7 @@
 				Đăng ký</a>
 			</div>
 		</form>
-	</div>
-	<div id="idregister" class="modal">
-		<form class="modal-content animate">
+		<form id="idregister" class="modal-content animate" style="display: none;">
 			<div class="title-login">Đăng Ký Tài Khoản</div>
 			<input class="input-login" type="text" name="uname" placeholder="Email" required>
 			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
@@ -179,16 +177,12 @@
 
 	<script>
 		// Get the modal
-		var modal = document.getElementById('idlogin');
-		var modal2 = document.getElementById('idregister');
+		var modal = document.getElementById('idmodal');
 
 		// When the user clicks anywhere outside of the modal, close it
 		window.onclick = function(event) {
 		    if (event.target == modal) {
 		        modal.style.display = "none";
-		    }
-		    if (event.target == modal2) {
-		        modal2.style.display = "none";
 		    }
 		}
 	</script>
