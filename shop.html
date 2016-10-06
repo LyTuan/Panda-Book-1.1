@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/bootstrap-social.css">
 	<link rel="stylesheet" href="css/styleShop.css">
+	<link rel="stylesheet" href="css/login.css">
 
 
 
@@ -41,7 +42,7 @@
 									<li><a href="#">My acount</a></li>
 									<li><a href="#">Wishlist</a></li>
 									<li><a href="#">Sign out</a></li>
-									<li><a href="#">Sign in</a></li>
+									<li><a href="#" onclick="document.getElementById('idlogin').style.display='block'">Sign in</a></li>
 									<li><a href="#">Create new acount</a></li>
 									
 								</ul>
@@ -146,6 +147,52 @@
 			</div>
 		</div> <!--end .main-navbar-->
 	</header><!-- /header-->
+
+	<!--Login, Register-->
+	<div id="idlogin" class="modal">
+		<form class="modal-content animate">
+			<div class="title-login">Đăng Nhập</div>
+			<input class="input-login" type="text" name="uname" placeholder="Email" required>
+			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+			<a class="link-forgot-psw" href="">Quên mật khẩu?</a>
+			<button class="btn-login">Đăng Nhập</button>
+			<div class=text-register>
+				Bạn chưa có tài khoản? 
+				<a href="#" onclick="document.getElementById('idlogin').style.display='none';
+									document.getElementById('idregister').style.display='block'">
+				Đăng ký</a>
+			</div>
+		</form>
+	</div>
+	<div id="idregister" class="modal">
+		<form class="modal-content animate">
+			<div class="title-login">Đăng Ký Tài Khoản</div>
+			<input class="input-login" type="text" name="uname" placeholder="Email" required>
+			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+			<input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
+			<div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
+				<a href="">điều kiện sử dụng của Panda Book.</a>
+			</div>
+			<button class="btn-login">Đăng Ký</button>
+		</form>
+	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('idlogin');
+		var modal2 = document.getElementById('idregister');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		    }
+		    if (event.target == modal2) {
+		        modal2.style.display = "none";
+		    }
+		}
+	</script>
+
 
 	<section class="slider">
 					<div id="slider-demo" class="carousel slide" data-ride="carousel">

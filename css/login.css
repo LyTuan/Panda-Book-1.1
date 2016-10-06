@@ -1,0 +1,91 @@
+.title-login {
+	font-size: 30px;	
+	font-weight: bold;
+	text-align: center;
+}
+.input-login {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 15px;
+	display: inline-block;
+	border: solid 2px #ccc;
+	box-sizing: border-box;
+}
+.input-login:focus {
+	border: solid 2px #45a6e6;
+}
+.input-login:invalid {
+	box-shadow: none;
+}
+.btn-login {
+	width: 100%;
+	display: inline-block;
+	padding: 7px;
+	margin-bottom: 15px;
+	background-color: #45a6e6;
+	border: none;
+	color: #ffffff;
+	font-weight: bold;
+}
+.btn-login:hover {
+	color: #ffffff;
+}
+.btn-login:hover:focus {
+	color: #ffffff;
+}
+.btn-login:focus {
+	outline: none;
+	color: #ffffff;
+}
+.btn-login:active:focus  {
+	outline: none;
+	color: #ffffff;
+}
+.btn-login:active {
+	background-color: #0077bc;
+}
+.link-forgot-psw {
+	float: right;
+	margin-bottom: 15px;
+}
+.text-register {
+	text-align: center;
+	margin-bottom: 15px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    padding: 20px;
+}
