@@ -1,0 +1,206 @@
+@media(min-width: 789px){
+	
+
+/*Css của Lý Tuấn*/
+
+  .content{
+	margin-top: 500px;
+}
+.img {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+  }
+  .price {
+    text-align: center;
+  }
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .space {
+    width: 100px;
+    height: 156px;
+    float: left;
+  }
+
+  .tooltip_templates { 
+    display: none; 
+  }
+
+  .btn-primary {
+    position: relative;
+    left: 20px;
+  }
+
+.jumbotron{
+	background-color: #ffffff;
+}
+#banner{
+	margin-left: 15px;
+}
+#logo{
+	margin-left:0px;
+	width: 100px;
+	height: 100px;
+}
+.dropdown{
+	margin-left: 0px;
+}
+#banner{
+	margin-top: 5px;
+}
+
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+.red{
+  background-color: red;
+}
+.brown{
+  background-color: #e7e7e7;
+}
+.details{
+  margin-top: 100px;
+}
+
+/*Css của Tú*/
+
+
+  html {
+  //    overflow: auto;
+    }
+
+    body {
+      padding: 0px;
+  //    overflow: auto;
+    }
+  
+    #header {
+      margin-top: 0px;
+      width: 100%;
+      /*background-color: #0000ff;*/
+    }
+
+    #header h1 {
+      margin-left: 10px;
+      line-height: 150%;
+      margin-top: 100px;
+    }
+
+    #container {
+      padding: 0px;
+      width: 900px;
+      border: 1px solid blue;
+      height: auto;
+    }
+
+    #content {
+      margin: 0 4px;
+      padding: 0;
+    //  overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .search-list {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .book-search {
+      width: 180px;
+      margin: 10px auto;
+      float: left;
+    //  display: inline-block;
+      width: auto;
+      position: relative;
+    //  background-color: blue;
+    margin:5px 5px 5px 5px;
+      /*background-color: #dddddd;*/
+    }
+
+    .tooltip {
+      padding: 10%;
+      width: 100%;
+      margin: 0px;
+      background-color: #33ffff;
+      border-radius: 0.5em;
+
+      display: inline-block; 
+      text-overflow: ellipsis;
+      display: none;
+      z-index: 100;
+      position: absolute;
+
+      top: 90%;
+      left: 10%;
+    }
+
+    .tooltip:after {
+      content: "";
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent #33ffff transparent;
+      position: absolute;
+      bottom: 100%;
+      left: 10%;
+    }
+
+    .book-link {
+      height: auto;
+      width: 100%;
+      width: auto;
+      margin: 10;
+    }
+
+    .book-img {
+      width: auto;
+      width: 100%;
+      height: auto;
+    }
+    
+    .wrap {
+      padding: 5px;
+    }
+
+    .other-page {
+      margin: 200px auto 10px 20px;
+    }
+
+    .page {
+      padding: 6px 12px;
+      border-radius: 2px;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border: 1px solid red;
+    }
+
+    a.page:hover {
+      background-color: pink;
+      color: blue;
+    }
+
+
+    @media screen and (max-width: 768px){
+      #container {width: 100%;}
+        #content{ width: 100%; }
+    }
+
+}
+
+
+
+@media(min-width: 480px max-width: 789px){
+	#logo{
+		visibility: none;
+	}
+}
