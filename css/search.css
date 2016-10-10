@@ -1,11 +1,13 @@
 
-html {
-	width: 100%;
+.search-container {
+	width: 80%;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	font-size: 16px;
 }
 
-body {
-	min-height: 100%;
-}
 
 p {
 	word-wrap: break-word !important;
@@ -19,7 +21,7 @@ p {
 }
 
 .search-info {
-
+	font-size: 1.5em;
 }
 
 .view-type {
@@ -94,22 +96,12 @@ ul.pd-pagination li a:hover:not(.active) {
 
 /* search 1 */
 
-
-
-.search-container {
-	width: 80%;
-	display: table;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
-//	margin: 0px;
-}
-
 p {
 	font-family: sans-serif;
 }
 
 .search-header {
+	padding-left: 20px;
 	margin-bottom: 0px;
 }
 
@@ -123,11 +115,16 @@ p {
 .s-item {
 	padding-bottom: 0px;
 	border-bottom: 1px solid #ddd;
+	vertical-align: top;
+	display: inline-block;
+	margin-bottom: 0px;
+	height: auto;
+	
 }
 
 .item-wrapper {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .item-wrapper > div {
@@ -202,13 +199,14 @@ p {
 	text-decoration: none;
 }
 
-.s-add-to-cart {
-}
-
 .s-add-to-cart a {
 	display: inline-block;
 	text-decoration: none;
 	margin: auto;
+}
+
+.s-add-to-cart a:hover .add-to-cart-text {
+	background-color: #e00;
 }
 
 .add-to-cart-text {
@@ -225,6 +223,10 @@ p {
 	margin: 15px auto;
 }
 
+
+.list-view .s-item {
+	width: 100%;
+}
 /* end list-view layout */
 
 
@@ -347,6 +349,15 @@ p {
 	}
 }
 
+@media only screen and (max-width: 359px) {
+	.item-wrapper > div {
+		display: block;
+	}
+
+	.view-type {
+		display: none;
+	}
+}
 
 
 @media only screen and (max-width: 320px) {

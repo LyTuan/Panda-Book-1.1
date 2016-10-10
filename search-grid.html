@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shop</title>
+
+	<!-- Khai báo css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="css/styleShop.css">
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+
+
+</head>
+<body >
+	<header>
+		<div class="top-bar">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="pull-left">
+							<div class="lang">
+								<!-- Single button -->
+								<div class="btn-group">
+								  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    English <span class="caret"></span>
+								  </button>
+								  <ul class="dropdown-menu">
+								    
+								    <li><a href="#">Viet Nam</a></li>
+								    <li><a href="#">Japanese</a></li>
+								  </ul>
+								</div>
+							</div>
+						</div>
+						<div class="pull-right">
+							
+								<ul class="list-unstyled top-links">
+									<li><a href="#">Tài khoản</a></li>
+									<!-- <li><a href="#">Wishlist</a></li> -->
+									<li><a href="#">Đăng ký</a></li>
+									<li><a href="#">Đăng nhập</a></li>
+									<li><a href="#">Tạo tài khoản</a></li>
+									
+								</ul>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end .top-bar-->
+		
+		<div class="main-header">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-4 ">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search for...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+								</span>
+							</div><!-- /input-group -->
+					</div>
+
+					<div class="col-sm-4 ">
+						<div class="logo text-center">
+							<div><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+						</div>
+					</div>
+
+					<div class="col-sm-4">
+						<div class="pull-right">
+							<div class="cart-wish-w">
+								<div class="cart-w">
+									<div class="cart-info">
+										<span>
+											<strong>0 sản phẩm</strong>
+											<strong>0 đồng</strong>
+										</span>
+										<a href="#" class="btn-cart">
+											<i class="glyphicon glyphicon-shopping-cart"></i>
+										</a>
+									</div>
+									
+								</div>
+								<div class="wishlist-w">
+									<div class="wishlist-info">
+										<span>
+											<strong>
+												0 sản phẩm
+											</strong>
+										</span>
+										<a href="#" class="btn-cart">
+											<i class="glyphicon glyphicon-heart"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end .main-header-->
+
+		<div class="main-navbar">
+			<div class="container">
+				<div class="row">
+					 <ul class="nav nav-pills" data-spy="affix" data-offset-top="197">
+				        <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i> Trang chủ</a></li>
+				        <li><a href="forum.html">Diễn đàn</a></li>
+				        <li><a href="#">Tin tức</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				          Sách UET
+				          <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Công nghệ thông tin</a></li>
+				            <li><a href="#">Điện tử viễn thông</a></li>
+				            <!-- <li><a href="#">Khác</a></li> -->
+				            <!-- <li role="separator" class="divider"></li> -->
+				            <li><a href="#">An toàn thông tin</a></li>
+				            <!-- <li role="separator" class="divider"></li> -->
+				            <!-- <li><a href="#">Cơ kỹ thuật</a></li> -->
+				          </ul>
+				        </li>
+				         <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				          Sách ngoái
+				          <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#">Sách kỹ năng</a></li>
+				            <li><a href="#">Sách thiếu nhi</a></li>
+				            <!-- <li><a href="#">Khác</a></li> -->
+				            <!-- <li role="separator" class="divider"></li> -->
+				            <li><a href="#">Sách tâm lý</a></li>
+				            <!-- <li role="separator" class="divider"></li> -->
+				            <!-- <li><a href="#">Sách dạy con</a></li> -->
+				          </ul>
+				        </li>
+				      </ul>
+				</div>
+			</div>
+		</div> <!--end .main-navbar-->
+	</header><!-- /header-->
+
+	<section class="content">
+		<div class="search-container">
+			<div class="search-header">
+				<div class="search-info">
+	          		<p>Kết quả tìm kiếm cho: <span class="keyword">tony</span></p>
+	        	</div>
+		        <div class="view-type">
+			        <a href="search-list.html" title="khung lưới"><span class="glyphicon glyphicon-th"></span></a>
+		        </div>
+			</div>
+			<!-- search header -->
+			<div class="search-content grid-view">
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<p> 
+									<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+									<span class="discount" title="Giảm giá">-20%</span>
+								</p>
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+				<div class="s-item">
+					<div class="item-wrapper">
+						<div class="s-img">
+							<a href="">
+								<img src="img/tony.png" class="img-res">
+							</a>
+						</div>
+						<div class="s-info">
+							<p class="title" title="Tên sách"><a href="#">Cà Phê Cùng Tony</a></p>
+							<p class="author" title="Tác giả">Tony Buổi Sáng</p>
+							<p class="book-format" title="Định dạng">Sách giấy, ebook</p>
+							<p class="price">
+								<span class="real-price" title="Giá bán">57.600 vnđ</span> 
+								<span class="discount" title="Giảm giá">-20%</span>
+								<br />
+								<p class="original-price" title="" ="Giá cũ">72.000 vnđ</original-price> 
+							</p>
+							
+							<div class="s-add-to-cart">
+								<a href="#">
+									<p class="add-to-cart-text"><span class="glyphicon glyphicon-shopping-cart"></span> Thêm vào giỏ hàng</p>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+
+
+				
+			</div>
+			<!-- search content -->
+			<div class="search-footer">
+				<div class="pd-center">
+		          	<ul class="pd-pagination">
+			            <li class="disable"><a href="#">Trang trước</a></li>
+			            <li class="active hidden-mb"><a href="#">1</a></li>
+			            <li class="hidden-mb"><a href="#">2</a></li>
+			            <li class="hidden-mb"><a href="#">3</a></li>
+			            <li class="hidden-mb">...</li>
+			            <li class="hidden-mb"><a href="#">19</a></li>
+			            <li><a href="#">Trang tiếp</a></li>
+		          	</ul>
+	        	</div>
+			</div>
+			<!-- search footer -->
+		</div>	<!-- end search-content -->
+
+
+			<hr>
+			<div class="about">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="about-w">
+							<div class="form-about">
+								<h3>
+									About Panda
+								</h3>
+								<a href="#" class="btn btn-default">Contact us</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-9 shop-about">
+						<p>
+							Shop bán các sách về uet, sách kỹ năng, truyện ngôn tình, sách dành cho thiếu nhi
+						</p>
+						<p>
+							Shop do nhóm Panda xây dựng
+						</p>
+					</div>
+				</div>
+				
+			</div><!--end about-->
+			<hr>
+			<div class="row">
+				<div class="col-sm-12"> 
+					<h3 class="title"> New</h3>
+				</div>
+			</div>
+			<div class="new-lists">
+				<div class="row">
+					<div class="col-sm-3 news-item">
+						<span class="date">
+							<i class="glyphicon glyphicon-dashboard"></i>
+							01/10/2016
+						</span>
+						<h2>Sách mới ra</h2>
+						<p class="excerpt">
+							Sách mới ra đều được cập nhật vào trong thư viện sách của nhóm Panda
+						</p>
+						<a href="#" class="read-more">Read more</a>
+						</div>
+							<div class="col-sm-3 news-item">
+						<span class="date">
+							<i class="glyphicon glyphicon-dashboard"></i>
+							01/10/2016
+						</span>
+						<h2>Sách mới ra</h2>
+						<p class="excerpt">
+							Sách mới ra đều được cập nhật vào trong thư viện sách của nhóm Panda
+						</p>
+						<a href="#" class="read-more">Read more</a>
+						</div>
+							<div class="col-sm-3 news-item">
+						<span class="date">
+							<i class="glyphicon glyphicon-dashboard"></i>
+							01/10/2016
+						</span>
+						<h2>Sách mới ra</h2>
+						<p class="excerpt">
+							Sách mới ra đều được cập nhật vào trong thư viện sách của nhóm Panda
+						</p>
+						<a href="#" class="read-more">Read more</a>
+						</div>
+							<div class="col-sm-3 news-item">
+						<span class="date">
+							<i class="glyphicon glyphicon-dashboard"></i>
+							01/10/2016
+						</span>
+						<h2>Sách mới ra</h2>
+						<p class="excerpt">
+							Sách mới ra đều được cập nhật vào trong thư viện sách của nhóm Panda
+						</p>
+						<a href="#" class="read-more">Read more</a>
+						</div>
+
+				</div>
+			</div>
+			<hr>
+		</div><!-- end container-->
+
+	</section><!--end content-->
+
+	<footer >
+		<div class="footer-custom">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="title">
+							<h3>ABOUT US</h3>
+							<div class="line"></div>	
+						</div>
+						<div class="content">
+							<p>Chúng tớ học K59CLC</p>
+							<p>Chúng tớ là con trai</p>
+							<p>Đây là bài tập lớn của chúng tớ</p>
+						</div>
+						
+					</div>
+					<div class="col-sm-3">
+						<div class="title">
+							<h3>CONTACT US</h3>
+							<div class="line"></div>	
+						</div>
+						<div class="content">
+							<div class="item">
+								<div class="icon inlineFooter">
+									<i class="glyphicon glyphicon-map-marker"></i>
+								</div>
+								<div class="info">
+									Số 144 Xuân Thủy Cầu Giấy Hà nội
+								</div>	
+							</div>
+							<div class="item">
+								<div class="icon inlineFooter">
+									<i class="glyphicon glyphicon-phone-alt">
+									</i>
+								</div>
+								<div class="info">
+									<a href="#">01689700133</a>
+								</div>	
+
+							</div>
+							<div class="item">
+								<div class="icon inlineFooter">
+									<i class="glyphicon glyphicon-envelope">
+									</i>
+								</div>
+								<div class="info">
+									<a href="#">pandabook@gmail.com</a>
+								</div>	
+
+							</div>
+							<div class="item">
+								<div class="icon inlineFooter" >
+									<i class="glyphicon glyphicon-user">
+									</i>
+								</div>
+								<div class="info">
+									<a href="#">panda</a>
+								</div>	
+
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-sm-3">
+						<div class="title">
+							<h3>TWISTER</h3>
+							<div class="line"></div>	
+						</div>
+						<div class="content">
+							  <a class="btn btn-block btn-social btn-twitter">
+    								<span class="fa fa-twitter"></span> Follow us on Twitter
+  							</a>
+						</div>
+						
+					</div>
+					<div class="col-sm-3">
+						<div class="title">
+							<h3>FACEBOOK</h3>
+							<div class="line"></div>	
+						</div>
+						<div class="content">
+							 <a class="btn btn-block btn-social btn-facebook" href="http:www.facebook.com/lytuanqo">
+    							<span class="fa fa-facebook"></span> Follow us on facebook
+						  </a>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer-links">
+			<div class="container">
+			<hr>
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="title">
+							<h3></h3>
+							<div class="line"></div>	
+						</div>
+						<div class="content"></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+				<div class="container">
+				<hr>
+						<div class="row">
+							<div class="col-sm-12">
+								<p> &copy; 2016| Theme custom by Panda</p>
+									
+							</div>
+						</div>
+				</div>
+		</div>
+	</footer>
+
+
+		
+	</section>
+	<!-- Khai báo script -->
+	<script type="text/javascript" src="js/libraryJQuery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scriptShop.js"></script>
+</body>
+</html>
