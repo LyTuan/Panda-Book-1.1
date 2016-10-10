@@ -5,15 +5,10 @@ html {
 
 body {
 	min-height: 100%;
-	margin: 0;
 }
 
 p {
 	word-wrap: break-word !important;
-}
-
-.search-container {
-	width: 100%;
 }
 
 .search-header {
@@ -23,157 +18,64 @@ p {
 	position: relative;
 }
 
-.search-header > div {
-	display: inline-block;
-}
-
 .search-info {
-//	float: left;
+
 }
 
 .view-type {
-	position: absolute;
-//	float: left;
-//	margin-left: auto;
-	right: 0px;
-	bottom: 0px;
+	margin: auto 20px;
+	text-align: right;
+	font-size: 1.69em;
+}
+
+.view-type a {
+	color: #000;
 }
 
 .keyword {
 	color: #ff0000;
 }
 
-.search-content {
-	width: 100%;
-	display: table;
-	margin: 0px;
-	padding: 0px;
-}
 
-
-.search-content ul {
-	width: 100%;
-	display: table;
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
-}	
-
-.pd-list-item {
-	position: relative;
-	padding: 0px;
-	width: 25%;
-	display: inline-block;
-	overflow: hidden;
-	vertical-align: top;
-
-	box-sizing: border-box;
-}
-
-
-.pd-item-container {
-	display: block;
-	margin: 0px 0px 12px 12px;
-//	padding: 15px 20px 20px 20px !important;
-	padding-top: 15px;
-	border: 1px solid #eeeeee;
-	position: relative;
-	overflow: hidden;
-}
-
-.pd-img-con {
-	display: block;
-	margin: auto;
-	width: 260px;
-	height: 260px;
-	position: relative;
-}
-
-.pd-img-con img {
-	display: block;
-	width: 220px;
-	height: 220px;
-	position: relative;
-	top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.pd-wrapper-info {
-	display: block;
-	height: 100%;
-	padding: 5px 20px 10px 20px !important;
-}
-
-a.pd-btn {
-	
-    padding: 6px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.2em;
-    margin: 4px 2px;
-    cursor: pointer;
-
-	margin: 5px auto;
-}
-
-.pd-item-container:hover {
-	border-color: #000;
-}
-
-.pd-item-container:hover img {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.pd-item-container:hover a.pd-btn {
-	border-color: #000;
-	background-color: #f00;
-	color: #fff;
-}
-
-
-// pagination
-ul.pd-pagination {
+/*  pagination */
+.pd-pagination {
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
     list-style: : none;
 }
 
-ul.pd-pagination li {
+.pd-pagination li {
   display: inline-block;
+  margin: 1px;
 }
 
-ul.pd-pagination li a {
+.pd-pagination li a {
     border: 1px solid transparent;
+    border-radius: 2px;
     color: black;
     padding: 6px 12px;
     text-decoration: none;
 }
 
-ul.pd-pagination li.pd-active a {
-    background-color: #333333;
+.pd-pagination .active a {
+    background-color: #FF7722;
     color: white;
-    pointer-events: none;
 }
 
-ul.pd-pagination li.pd-disable a{
-	pointer-events: none;
+.pd-pagination .disable a{
 	background-color: #999999;
     color: white;
 }
 
-ul.pd-pagination li a:hover:not(.pd-active) {
+ul.pd-pagination li a:hover:not(.active) {
 	border: 1px solid #333333;
 }
 
-// end pagination
+/* end pagination */
 
 .search-footer {
+	margin: 20px;
 	height: 40px;
 }
 
@@ -196,8 +98,11 @@ ul.pd-pagination li a:hover:not(.pd-active) {
 
 .search-container {
 	width: 80%;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: hidden;
-	margin: 0px;
+//	margin: 0px;
 }
 
 p {
@@ -209,7 +114,10 @@ p {
 }
 
 .search-content {
+	display: table;
+	width: 100%;
 	margin: 0px;
+	padding: 0px;
 }
 
 .s-item {
@@ -233,7 +141,7 @@ p {
 
 .img-res {
 	width: 160px;
-	margin:  20px 30px;
+	margin: 20px 30px;
 }
 
 .s-img a:hover .img-res{
@@ -242,7 +150,8 @@ p {
 
 .s-info {
 	height: 100%;
-	padding: 0px 20px;
+	padding: 15px 20px 0px 15px;
+	margin: auto;
 	vertical-align: top;
 }
 
@@ -259,13 +168,13 @@ p {
 }
 
 .author {
-	line-height: 0.5;
+	line-height: 1;
 	font-style: italic;
 	font-size: 0.9em;
 }
 
 .book-format {
-	line-height: 0.5;
+	line-height: 1;
 	font-size: 0.9em;
 }
 
@@ -315,8 +224,11 @@ p {
 .add-to-cart-text {
 	padding: 5px;
 	background-color: #f00;
+	border-radius: 2px;
 	color: #fff;
+	margin: 20px auto;
 }
+
 
 /* grid layout */
 
@@ -324,6 +236,10 @@ p {
 	width: 25%;
 	display: inline-block !important;
 	border: none !important;
+}
+
+.grid .s-info {
+	padding: 15px 20px 0px 15px;
 }
 
 .grid .item-wrapper {
@@ -359,6 +275,13 @@ p {
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	.grid .s-item {
+		width: 33.33% !important;
+	}
+
+}
+
 @media only screen and (max-width: 768px) {
 	.grid .s-item {
 		width: 33.33% !important;
@@ -366,7 +289,7 @@ p {
 
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 680px) {
 	.grid .s-item {
 		width: 50% !important;
 	}
@@ -410,7 +333,7 @@ p {
 	}
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
 	.grid .s-item {
 		width: 100% !important;
 	}
