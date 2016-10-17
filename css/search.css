@@ -5,7 +5,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	font-size: 16px;
+//	font-size: 16px;
 }
 
 
@@ -27,7 +27,7 @@ p {
 .view-type {
 	margin: auto 20px;
 	text-align: right;
-	font-size: 1.69em;
+	font-size: 1.5em;
 }
 
 .view-type a {
@@ -119,7 +119,7 @@ p {
 	display: inline-block;
 	margin-bottom: 0px;
 	height: auto;
-	
+	font-size: 16px;
 }
 
 .item-wrapper {
@@ -131,7 +131,7 @@ p {
 	display: table-cell;
 }
 
-.s-img a:hover .img-res{
+.s-img a:hover .img-res {
 	opacity: 0.9;
 }
 
@@ -142,37 +142,40 @@ p {
 	vertical-align: top;
 }
 
-
-.title a {
+.title, .title:hover {
+	display: block;
+	height: auto;
 	font-weight: bold;
-	text-decoration: none;	
+	text-decoration: none !important;	
 	color: #000;
 	font-size: 1.1em;
+	line-height: 1.2;
+	margin-bottom: 0.8em;
 }
 
-.title a:hover {
+.title:hover {
 	color: #00f;
 }
 
 .author {
-	line-height: 1;
+	line-height: 0.8;
 	font-style: italic;
 	font-size: 0.9em;
+	margin-bottom: 0.3em;
 }
 
 .book-format {
-	line-height: 1;
 	font-size: 0.9em;
 }
 
 .price {
-	line-height: 70%;
+	line-height: 0.9;
 }
 
 .real-price {
 	font-weight: bold;
 	text-decoration: none;	
-	color: #00f;
+	color: #000;
 	font-size: 1em;
 }
 
@@ -199,10 +202,14 @@ p {
 	text-decoration: none;
 }
 
+.s-add-to-cart {
+	height: auto;
+}
+
 .s-add-to-cart a {
-	display: inline-block;
+	display: table;
 	text-decoration: none;
-	margin: auto;
+	margin-bottom: 0px;
 }
 
 .s-add-to-cart a:hover .add-to-cart-text {
@@ -214,19 +221,37 @@ p {
 	background-color: #f00;
 	border-radius: 2px;
 	color: #fff;
-	margin: 20px auto;
+	margin: 10px auto;
+	font-size: 1em;
 }
 
 /* list-view layout */
-.list-view .img-res {
-	height: 210px;
-	margin: 15px auto;
-}
-
 
 .list-view .s-item {
 	width: 100%;
 }
+
+
+.list-view .img-res {
+	height: 210px;
+	margin: 15px auto !important;
+}
+
+.list-view .title {
+	line-height: 1.2;
+	margin-bottom: 5px;
+}
+
+.list-view .price,
+.list-view .author {
+	line-height: 1.4;
+}
+
+.list-view .s-add-to-cart a {
+	margin-left: 0px;
+}
+
+
 /* end list-view layout */
 
 
@@ -234,16 +259,18 @@ p {
 
 .grid-view .s-item {
 	width: 25%;
-	display: inline-block !important;
+	height: auto;
+	float: left;
+	display: table-cell;
 	border: none !important;
 }
 
 .grid-view .s-info {
-	padding: 15px 20px 0px 15px;
+	padding: 0px 20px 15px 10px;
 }
 
 .grid-view .item-wrapper {
-	margin: 5px;
+	margin: 3px;
 	width: auto !important;
 	border: 1px solid #ddd;
 }
@@ -255,11 +282,24 @@ p {
 .grid-view .item-wrapper .img-res {
 	width: 160px;
 	display: table;
-	margin: 15px auto;
+	margin: 10px auto;
 }
 
 .grid-view .s-add-to-cart a {
 	display: table;
+	margin: auto auto 0px auto;
+}
+
+.grid-view .s-add-to-cart a p {
+	margin-bottom: 0px;
+}
+
+.grid-view .title {
+	height: 2.2em;
+}
+
+.grid-view .price {
+	height: 2.2em;
 }
 
 /* end grid-view layout */
@@ -291,8 +331,13 @@ p {
 }
 
 @media only screen and (max-width: 680px) {
+	
 	.grid-view .s-item {
 		width: 50% !important;
+	}
+
+	.grid-view .s-info {
+		padding: 5px;
 	}
 
 }
@@ -340,25 +385,34 @@ p {
 }
 
 @media only screen and (max-width: 460px) {
-	.grid-view .s-item {
-		width: 100% !important;
+	.s-item .item-wrapper {
+		margin: 0px;
+	} 
+
+	.s-item {
+		font-size: 14px;
 	}
 
 	.s-info {
-		padding-left: 10px;
+		padding: 10px;
+		vertical-align: middle;
 	}
 }
 
-@media only screen and (max-width: 359px) {
-	.item-wrapper > div {
-		display: block;
+@media only screen and (max-width: 350px) {
+	.s-info {
+		padding-left: 10px;
+		padding-bottom: 20px !important;
 	}
 
-	.view-type {
+	.s-add-to-cart {
 		display: none;
 	}
-}
 
+	.grid-view .img-res {
+		width: 90% !important;
+	}
+}
 
 @media only screen and (max-width: 320px) {
 	.s-info {

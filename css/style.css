@@ -7,32 +7,32 @@
 	margin-top: 500px;
 }
 .img {
-    float: left;
-    margin: 10px;
-    padding: 5px;
-  }
-  .price {
-    text-align: center;
-  }
-  button {
-    display: block;
-    margin: 0 auto;
-  }
+  float: left;
+  margin: 10px;
+  padding: 5px;
+}
+.price {
+  text-align: center;
+}
+button {
+  display: block;
+  margin: 0 auto;
+}
 
-  .space {
-    width: 100px;
-    height: 156px;
-    float: left;
-  }
+.space {
+  width: 100px;
+  height: 156px;
+  float: left;
+}
 
-  .tooltip_templates { 
-    display: none; 
-  }
+.tooltip_templates { 
+  display: none; 
+}
 
-  .btn-primary {
-    position: relative;
-    left: 20px;
-  }
+.btn-primary {
+  position: relative;
+  left: 20px;
+}
 
 .jumbotron{
 	background-color: #ffffff;
