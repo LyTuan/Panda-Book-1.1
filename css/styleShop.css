@@ -16,7 +16,7 @@
 }
 .top-bar{
 	background-color: #F5F5F5;
-	padding: 10px 0px;
+	padding: 5px 0px;
 }
 .top-bar.lang{
 	font-size: 11px;
@@ -34,6 +34,7 @@
 	margin-top:0px;
 }
 .top-links{
+	padding-top: 7px;
 	overflow: hidden;
 }
 .top-links li{
@@ -71,7 +72,7 @@
 
 }
 .cart-wish-w a{
-	display: block;
+	display: inline-block;
 	float: left;
 	width: 31px;
 	height: 31px;
@@ -139,17 +140,18 @@
  .affix ~ .container-fluid {
      position: relative;
      top: 50px;
-     background-color: #fff;
+     background-color:#1E1E21;
   }
 
   .affix {
-      top:0;
-      width: 100%;
-      z-index: 9999 !important;
-      background-color: #000;
-          position: fixed;
+     top:0;
+     width: 100%;
+     z-index: 9999 !important;
+     background-color: #000;
+     position: fixed;
     left: 0px;
-    padding-left: 100px;
+    padding-left: 6%;
+    font:50%;
 
 
   }
@@ -257,5 +259,168 @@ h3.box-title{
 	line-height: 33px;
 	color: #fff;
 	text-align: center;
-	border-radius: 2px;
+	border-radius: 2px solid black;
+	text-decoration: none;
+}
+.btn-cart{
+	border: 1px solid;
+	padding: 5px;
+}
+
+/*PTuan*/
+
+.img {
+    float: left;
+    margin: 10px;
+    padding: 5px;
+}
+
+.space {
+    width: 100px;
+    height: 156px;
+    float: left;
+}
+
+ .jssorb03 {
+            position: absolute;
+        }
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            color: white;
+            font-size: 12px;
+            background: url('../img/b03.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+ .jssorb03 div { background-position: -5px -4px; }
+   .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }     
+   .jssorb03 .av { background-position: -65px -4px;      }
+        .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }               
+ .jssora03l, .jssora03r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('../img/a03.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora03l { background-position: -3px -33px; }
+        .jssora03r { background-position: -63px -33px; }
+        .jssora03l:hover { background-position: -123px -33px; }
+        .jssora03r:hover { background-position: -183px -33px; }
+        .jssora03l.jssora03ldn { background-position: -243px -33px; }
+        .jssora03r.jssora03rdn { background-position: -303px -33px; }
+
+        .wrapper3 {
+            position: relative;
+            width: 200px;
+            height: 150px;
+        }
+        
+        .img-up {
+            width: 100% !important;
+            height: 100% !important;
+            position: absolute;
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+        }
+
+        .wrapper3 .show {
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            width: 100%;
+            height: 0px;
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+            color: #fff;
+        }
+
+        .wrapper3:hover .show {
+            height: 40px;
+        }
+
+        .wrapper3:hover .img-up {
+            top: -20px !important;
+          transform: translate(0px, -20px);
+        }
+
+        .header {
+        	position: relative;
+        	left: 100px;
+        }
+//For modal 
+.modal-header {
+    margin-top: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.space-icon{
+	margin-right:15px;
+	margin-left: 10px;
+}
+
+
+
+/*Trung footer*/
+/* footer */
+.footer-widgets {
+	background-color: #252525;
+	padding-top: 15px;
+}
+.widget {
+	padding-bottom: 10px;
+}
+.widget-title {
+	color: #fff;
+	margin-bottom: 15px;
+	margin-top: 25px;
+}
+.widget-content {
+	color: #acacac
+}
+.list-socials {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.list-socials li {
+	float: left;
+	margin-right: 20px;
+}
+.list-socials li a {
+	color:  #acacac;
+	font-size: 18px;
+}
+.list-socials li a:hover {
+	color: #599bff;
+}
+.footer-copyright {
+	padding: 5px 0px 5px 0px;
+	background-color: #2f2f2f;
+}
+.copyright span,
+.language span {
+	font-size: 80%;
+	color: #acacac;
+}
+.language a {
+	color: #acacac;
+	font-size: 80%;
+}
+.language a:hover {
+	color: red;
+	text-decoration: none;
 }
