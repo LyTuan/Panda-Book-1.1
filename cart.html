@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Panda Book</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/slider-jssor.css">
+
+</head>
+<body>
+  <!--Container shopping cart-->
+  <div class="container cart">
+    <div class="row">
+      <!-- component shopping cart-->
+      <div class="col-md-8">
+        <!--Title shopping cart-->
+        <h2 class="text-title"><b>GIỎ HÀNG</b></h2>
+        <div class="row title-cart hidden-sm hidden-xs">
+          <div class="col-md-6"></div>
+          <div class="col-md-2">
+            <h5>Giá</h5>
+          </div>
+          <div class="col-md-2">
+            <h5>Số lượng</h5>
+          </div>
+          <div class="col-md-2">
+            <h5 class="float-right">Thành tiền</h5>
+          </div>
+        </div>
+        <!--show item-->
+        <div class="row show-item">
+          <div class="col-md-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-4 col-xs-3">
+                <img src="img/toivaparis.jpg" class="img-responsive">
+              </div>
+              <div class="col-md-8 col-xs-9">
+                <p class="book-name">
+                  <a href="">Tôi Và Paris - Câu Chuyện Một Dòng Sông</a>
+                </p>
+                <p>
+                  Tác giả: 
+                  <a href="">Hoàng Long</a>
+                </p>
+                <p class="item-availability">
+                  Còn hàng
+                </p>
+                <p class="action-link">
+                  <a href=""><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;Xóa</a>
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <a href=""><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Yêu thích</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-0 col-xs-offset-3">
+            <div class="text-money">53.000&nbsp;₫</div>
+          </div>
+          <div class="col-md-2 col-xs-4 col-md-offset-0 col-xs-offset-3">
+            <input class="input-quantily" type="number" name="quantily" value="1">
+          </div>
+          <div class="col-md-2">
+            <div class="text-money float-right">53.000&nbsp;₫</div>
+          </div>
+        </div>
+
+        <div class="row show-item">
+          <div class="col-md-6 col-xs-12">
+            <div class="row">
+              <div class="col-md-4 col-xs-3">
+                <img src="img/50sacthai.jpg" class="img-responsive">
+              </div>
+              <div class="col-md-8 col-xs-9">
+                <p class="book-name">
+                  <a href="">50 Sắc Thái (Fifty Shades Of Grey) - Tập 4: Grey</a>
+                </p>
+                <p>
+                  Tác giả: 
+                  <a href="">E. L. James</a>
+                </p>
+                <p class="item-availability">
+                  Còn hàng
+                </p>
+                <p class="action-link">
+                  <a href=""><span class="glyphicon glyphicon-trash"></span>&nbsp;&nbsp;Xóa</a>
+                  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <a href=""><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Yêu thích</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-0 col-xs-offset-3">
+            <div class="text-money">53.000&nbsp;₫</div>
+          </div>
+          <div class="col-md-2 col-xs-4 col-md-offset-0 col-xs-offset-3">
+            <input class="input-quantily" type="number" name="quantily" value="1">
+          </div>
+          <div class="col-md-2">
+            <div class="text-money float-right">53.000&nbsp;₫</div>
+          </div>
+        </div>
+        <!--show subtotal-->
+        <div class="row">
+          <div class="col-md-4 col-md-offset-8 subtotal">
+            <button type="button" class="btn-cart btn-block">TIẾP TỤC MUA HÀNG</button>
+          </div>
+        </div>
+      </div>
+      <!--component pay management-->
+      <div class="col-md-3 col-md-offset-1">
+        <!-- Create component free shipping -->
+        <div class="panel-free-shipping">
+            <div class="text-free-shipping">
+              <Strong>Note!</Strong> FREE Shipping
+            </div>
+        </div>
+        <!--component pay-->
+        <div class="panel-pay">
+          <div>
+            <p>
+              <span class="text-pay">TỔNG TIỀN:</span>
+              <span class="text-pay float-right">106.000&nbsp;₫</span>
+            </p>
+          </div>
+          <div>
+            <button type="button" class="btn-cart btn-block">TIẾN HÀNH ĐẶT HÀNG</button>
+          </div>
+          <div>
+            <p class="pay-sign">
+              <a href="">Đăng nhập</a>
+              để đặt hàng.
+            </p>
+          </div>
+        </div>
+        <!-- Create component gift code -->
+        <div class="panel-gift-code">
+              <button type="button" class="btn-block btn-gift" data-toggle="collapse" data-target="#open-gift">
+                Mã Quà Tặng
+              </button>
+              <div id="open-gift" class="collapse collapse-gift">
+                <div><h5>Nhập mã quà tặng:</h5></div>
+                <input type="text" class="form-control" id="gift-code">
+                <button type="button" class="btn-cart">Đồng ý</button>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <!--best book-->
+    <div class="row related-product">
+      <div>
+        <p class="text-related-product">SÁCH YÊU THÍCH NHẤT</p>
+      </div>
+      <div class="col-md-12">
+        <!--Slider book-->
+        <script src="js/jssor.slider-21.1.6.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/slider-jssor.js"></script>
+        <!--component slider-->
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1200px; height: 350px; overflow: hidden; visibility: hidden;">
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1200px; height: 350px; overflow: hidden;">
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                <div style="display: none;">
+                    <div><img data-u="image" src="img/trutien.jpg" style="width:100%;height:250px;"/></div>
+                    <div class="book-name-slider">TRU TIÊN (Nguyễn Bá Tú)</div>
+                    <div class="text-money">53.000&nbsp;₫</div>
+                    <button class="btn-slider">Thêm vào giỏ hàng</button>
+                </div>
+                
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        </div>
+        <script type="text/javascript">jssor_1_slider_init();</script>
+        <!-- #endregion Jssor Slider End -->
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+ 
+</body>
+</html>

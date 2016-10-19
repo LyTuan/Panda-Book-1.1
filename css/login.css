@@ -53,7 +53,11 @@
 	margin-bottom: 15px;
 }
 /* The Modal (background) */
+<<<<<<< HEAD
 .modal1 {
+=======
+.modal {
+>>>>>>> e906c9e40475fef6ec51381c2b31acafdc671b1a
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 10; /* Sit on top */
@@ -82,7 +86,11 @@
     to {transform: scale(1)}
 }
 /* Modal Content/Box */
+<<<<<<< HEAD
 .modal1-content {
+=======
+.modal-content {
+>>>>>>> e906c9e40475fef6ec51381c2b31acafdc671b1a
     background-color: #fefefe;
     margin: auto; /*center */
     border: 1px solid #888;

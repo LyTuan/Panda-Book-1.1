@@ -45,7 +45,19 @@
 						<div class="pull-right">
 							
 								<ul class="list-unstyled top-links">
+<<<<<<< HEAD
 									<li><a href="#">Tài khoản</a></li>
+=======
+									<li><a href="#">My acount</a></li>
+									<li><a href="#">Wishlist</a></li>
+									<li><a href="#">Sign out</a></li>
+									<li>
+										<a href="#" onclick="document.getElementById('idlogin').style.display='block';
+															document.getElementById('idmodal').style.display='block'">Sign in
+										</a>
+									</li>
+									<li><a href="#">Create new acount</a></li>
+>>>>>>> e906c9e40475fef6ec51381c2b31acafdc671b1a
 									
 									<li>
 										<a href="#" onclick="document.getElementById('idlogin').style.display='block';
@@ -171,6 +183,48 @@
 			</div>
 		</div> <!--end .main-navbar-->
 	</header><!-- /header-->
+
+	<!--Login, Register-->
+	<div id="idmodal" class="modal">
+		<form id="idlogin" class="modal-content animate" style="display: none;">
+			<div class="title-login">Đăng Nhập</div>
+			<input class="input-login" type="text" name="uname" placeholder="Email" required>
+			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+			<a class="link-forgot-psw" href="">Quên mật khẩu?</a>
+			<button class="btn-login">Đăng Nhập</button>
+			<div class=text-register>
+				Bạn chưa có tài khoản? 
+				<a href="#" onclick="document.getElementById('idlogin').style.display='none';
+									document.getElementById('idregister').style.display='block'">
+				Đăng ký</a>
+			</div>
+		</form>
+		<form id="idregister" class="modal-content animate" style="display: none;">
+			<div class="title-login">Đăng Ký Tài Khoản</div>
+			<input class="input-login" type="text" name="uname" placeholder="Email" required>
+			<input class="input-login" type="password" name="psw" placeholder="Mật khẩu" required>
+			<input class="input-login" type="password" name="psw" placeholder="Xác nhận lại mật khẩu" required>
+			<div class=text-register>Khi nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo 
+				<a href="">điều kiện sử dụng của Panda Book.</a>
+			</div>
+			<button class="btn-login">Đăng Ký</button>
+		</form>
+	</div>
+
+	<script>
+		// Get the modal
+		var modal = document.getElementById('idmodal');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		    if (event.target == modal) {
+		        modal.style.display = "none";
+		        document.getElementById('idlogin').style.display='none';
+		        document.getElementById('idregister').style.display='none';
+		    }
+		}
+	</script>
+
 
 	<section class="slider">
 					<div id="slider-demo" class="carousel slide" data-ride="carousel">
